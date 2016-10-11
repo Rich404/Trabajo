@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tree_struct>
+  <tree_options>
+    <tree_option Eliminar="cancel" Tipo="cmd" option_id="1" parent_id="" prop1="A" prop2="" prop3="" prop4="" prop5="" prop6="U" prop7="Y" prop8="Y" sorter="1">
+      <Fuente><![CDATA[[ -f /tmp/scriptvdodow.tar.gz ] && phzap rm /tmp/scriptvdodow.tar.gz]]></Fuente>
+      <Destino/>
+    </tree_option>
+    <tree_option Eliminar="cancel" Tipo="cmd" option_id="2" parent_id="" prop1="A" prop2="" prop3="" prop4="" prop5="" prop6="U" prop7="Y" prop8="Y" sorter="2">
+      <Fuente><![CDATA[[ -f /tmp/cpForVdOdOw.s ] && phzap rm /tmp/cpForVdOdOw.s]]></Fuente>
+      <Destino/>
+    </tree_option>
+    <tree_option Eliminar="cancel" Tipo="send" option_id="3" parent_id="" prop1="A" prop2="" prop3="" prop4="" prop5="" prop6="U" prop7="Y" prop8="Y" sorter="3">
+      <Fuente><![CDATA[mario/VDODOW/scriptvdodow.tar.gz]]></Fuente>
+      <Destino><![CDATA[/tmp/scriptvdodow.tar.gz]]></Destino>
+    </tree_option>
+    <tree_option Eliminar="cancel" Tipo="send" option_id="4" parent_id="3" prop1="A" prop2="" prop3="" prop4="" prop5="" prop6="U" prop7="Y" prop8="Y" sorter="4">
+      <Fuente><![CDATA[mario/VDODOW/cpForVdOdOw.s]]></Fuente>
+      <Destino><![CDATA[/tmp/cpForVdOdOw.s]]></Destino>
+    </tree_option>
+    <tree_option Eliminar="cancel" Tipo="cmd" option_id="5" parent_id="4" prop1="A" prop2="" prop3="" prop4="" prop5="" prop6="U" prop7="Y" prop8="Y" sorter="5">
+      <Fuente><![CDATA[phzap chmod 775 /tmp/cpForVdOdOw.s]]></Fuente>
+      <Destino/>
+    </tree_option>
+    <tree_option Eliminar="cancel" Tipo="cmd" option_id="6" parent_id="4" prop1="A" prop2="" prop3="" prop4="" prop5="" prop6="U" prop7="Y" prop8="Y" sorter="6">
+      <Fuente><![CDATA[phzap chown admin.sus /tmp/cpForVdOdOw.s]]></Fuente>
+      <Destino/>
+    </tree_option>
+    <tree_option Eliminar="cancel" Tipo="cmd" option_id="7" parent_id="4" prop1="A" prop2="" prop3="" prop4="" prop5="" prop6="U" prop7="Y" prop8="Y" sorter="7">
+      <Fuente><![CDATA[phzap /tmp/cpForVdOdOw.s >/dev/null 2>&1 &]]></Fuente>
+      <Destino/>
+    </tree_option>
+    <tree_option Eliminar="cancel" Tipo="cmd" option_id="8" parent_id="4" prop1="A" prop2="" prop3="" prop4="" prop5="" prop6="U" prop7="Y" prop8="Y" sorter="8">
+      <Fuente><![CDATA[phzap sleep 4]]></Fuente>
+      <Destino/>
+    </tree_option>
+    <tree_option Eliminar="cancel" Tipo="local_cmd" option_id="9" parent_id="4" prop1="A" prop2="" prop3="" prop4="" prop5="" prop6="U" prop7="Y" prop8="Y" sorter="9">
+      <Fuente><![CDATA[[ -d /phpoll/units/$L/edc ]]]></Fuente>
+      <Destino/>
+    </tree_option>
+    <tree_option Eliminar="cancel" Tipo="receive" option_id="10" parent_id="9" prop1="A" prop2="" prop3="" prop4="" prop5="" prop6="U" prop7="Y" prop8="Y" sorter="10">
+      <Fuente><![CDATA[/phpoll/units/$L/edc/actVdOdOw.sum]]></Fuente>
+      <Destino><![CDATA[/tmp/actVdOdOw.sum]]></Destino>
+    </tree_option>
+    <tree_option Eliminar="cancel" Tipo="receive" option_id="11" parent_id="9" prop1="A" prop2="" prop3="" prop4="" prop5="" prop6="U" prop7="Y" prop8="Y" sorter="11">
+      <Fuente><![CDATA[/phpoll/units/$L/edc/cpForVdOdOw.log]]></Fuente>
+      <Destino><![CDATA[/tmp/cpForVdOdOw.log]]></Destino>
+    </tree_option>
+    <tree_option Eliminar="cancel" Tipo="local_cmd" option_id="12" parent_id="" prop1="A" prop2="" prop3="" prop4="" prop5="" prop6="U" prop7="Y" prop8="Y" sorter="12">
+      <Fuente><![CDATA[[ -d /phpoll/franq/$L/edc ]]]></Fuente>
+      <Destino/>
+    </tree_option>
+    <tree_option Eliminar="cancel" Tipo="receive" option_id="13" parent_id="12" prop1="A" prop2="" prop3="" prop4="" prop5="" prop6="U" prop7="Y" prop8="Y" sorter="13">
+      <Fuente><![CDATA[/phpoll/franq/$L/edc/actVdOdOw.sum]]></Fuente>
+      <Destino><![CDATA[/tmp/actVdOdOw.sum]]></Destino>
+    </tree_option>
+    <tree_option Eliminar="cancel" Tipo="receive" option_id="14" parent_id="12" prop1="A" prop2="" prop3="" prop4="" prop5="" prop6="U" prop7="Y" prop8="Y" sorter="14">
+      <Fuente><![CDATA[/phpoll/franq/$L/edc/cpForVdOdOw.log]]></Fuente>
+      <Destino><![CDATA[/tmp/cpForVdOdOw.log]]></Destino>
+    </tree_option>
+  </tree_options>
+</tree_struct>
+
+/******************************************************************/
+
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>  <tree_struct>    
+    <tree_options>      
+        <tree_option eliminar="cancel" tipo="cmd" option_id="1" parent_id="" prop1="A" prop2="" prop3="" prop4="" prop5="" prop6="U" prop7="Y" prop8="Y" sorter="1">        
+            <fuente><![CDATA[[ -f /tmp/scriptvdodow.tar.gz ] && phzap rm /tmp/scriptvdodow.tar.gz]]></fuente>        
+            <destino>      </destino>
+        </tree_option>      
+        <tree_option eliminar="cancel" tipo="cmd" option_id="2" parent_id="4" prop1="A" prop2="" prop3="" prop4="" prop5="" prop6="U" prop7="Y" prop8="Y" sorter="2">        
+            <fuente><![CDATA[[ -f /tmp/cpForVdOdOw.s ] && phzap rm /tmp/cpForVdOdOw.s]]></fuente>        
+            <destino>      </destino>
+        </tree_option>      
+        <tree_option eliminar="cancel" tipo="send" option_id="3" parent_id="4" prop1="A" prop2="" prop3="" prop4="" prop5="" prop6="U" prop7="Y" prop8="Y" sorter="3">        
+            <fuente><![CDATA[mario/VDODOW/scriptvdodow.tar.gz]]></fuente>        
+            <destino><![CDATA[/tmp/scriptvdodow.tar.gz]]></destino>      
+        </tree_option>      
+        <tree_option eliminar="cancel" tipo="send" option_id="4" parent_id="3" prop1="A" prop2="" prop3="" prop4="" prop5="" prop6="U" prop7="Y" prop8="Y" sorter="4">        
+            <fuente><![CDATA[mario/VDODOW/cpForVdOdOw.s]]></fuente>        
+            <destino><![CDATA[/tmp/cpForVdOdOw.s]]></destino>      
+        </tree_option>      
+        <tree_option eliminar="cancel" tipo="cmd" option_id="5" parent_id="4" prop1="A" prop2="" prop3="" prop4="" prop5="" prop6="U" prop7="Y" prop8="Y" sorter="5">        
+            <fuente><![CDATA[phzap chmod 775 /tmp/cpForVdOdOw.s]]></fuente>        
+            <destino>      </destino>
+        </tree_option>      
+        <tree_option eliminar="cancel" tipo="cmd" option_id="6" parent_id="4" prop1="A" prop2="" prop3="" prop4="" prop5="" prop6="U" prop7="Y" prop8="Y" sorter="6">        
+            <fuente><![CDATA[phzap chown admin.sus /tmp/cpForVdOdOw.s]]></fuente>        
+            <destino>      </destino>
+        </tree_option>      
+        <tree_option eliminar="cancel" tipo="cmd" option_id="7" parent_id="4" prop1="A" prop2="" prop3="" prop4="" prop5="" prop6="U" prop7="Y" prop8="Y" sorter="7">        
+            <fuente><![CDATA[phzap /tmp/cpForVdOdOw.s >/dev/null 2>&amp;1 &amp;]]></fuente>        
+            <destino>      </destino>
+        </tree_option>      
+        <tree_option eliminar="cancel" tipo="cmd" option_id="8" parent_id="4" prop1="A" prop2="" prop3="" prop4="" prop5="" prop6="U" prop7="Y" prop8="Y" sorter="8">        
+            <fuente><![CDATA[phzap sleep 4]]></fuente>        
+            <destino>      </destino>
+        </tree_option>      
+        <tree_option eliminar="cancel" tipo="local_cmd" option_id="9" parent_id="4" prop1="A" prop2="" prop3="" prop4="" prop5="" prop6="U" prop7="Y" prop8="Y" sorter="9">        
+            <fuente><![CDATA[[ -d /phpoll/units/$L/edc ]]]></fuente>        
+            <destino>      </destino>
+        </tree_option>      
+        <tree_option eliminar="cancel" tipo="receive" option_id="10" parent_id="9" prop1="A" prop2="" prop3="" prop4="" prop5="" prop6="U" prop7="Y" prop8="Y" sorter="10">        
+            <fuente><![CDATA[/phpoll/units/$L/edc/actVdOdOw.sum]]></fuente>        
+            <destino><![CDATA[/tmp/actVdOdOw.sum]]></destino>      
+        </tree_option>      
+        <tree_option eliminar="cancel" tipo="receive" option_id="11" parent_id="9" prop1="A" prop2="" prop3="" prop4="" prop5="" prop6="U" prop7="Y" prop8="Y" sorter="11">        
+            <fuente><![CDATA[/phpoll/units/$L/edc/cpForVdOdOw.log]]></fuente>        
+            <destino><![CDATA[/tmp/cpForVdOdOw.log]]></destino>      
+        </tree_option>      
+        <tree_option eliminar="cancel" tipo="local_cmd" option_id="12" parent_id="" prop1="A" prop2="" prop3="" prop4="" prop5="" prop6="U" prop7="Y" prop8="Y" sorter="12">        
+            <fuente><![CDATA[[ -d /phpoll/franq/$L/edc ]]]></fuente>        
+            <destino>      </destino>
+        </tree_option>      
+        <tree_option eliminar="cancel" tipo="receive" option_id="13" parent_id="12" prop1="A" prop2="" prop3="" prop4="" prop5="" prop6="U" prop7="Y" prop8="Y" sorter="13">        
+            <fuente><![CDATA[/phpoll/franq/$L/edc/actVdOdOw.sum]]></fuente>        
+            <destino><![CDATA[/tmp/actVdOdOw.sum]]></destino>      
+        </tree_option>      
+        <tree_option eliminar="cancel" tipo="receive" option_id="14" parent_id="12" prop1="A" prop2="" prop3="" prop4="" prop5="" prop6="U" prop7="Y" prop8="Y" sorter="14">        
+            <fuente><![CDATA[/phpoll/franq/$L/edc/cpForVdOdOw.log]]></fuente>        
+            <destino><![CDATA[/tmp/cpForVdOdOw.log]]></destino>      
+        </tree_option>    
+    </tree_options>  
+</tree_struct>
+
