@@ -1,0 +1,95 @@
+http://www.java2s.com/Code/Jar/w/Downloadw3cdomjar.htm
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package sistemaexpertococina;
+
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.StringReader;
+import java.io.StringWriter;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+import org.w3c.dom.Document;
+import org.xml.sax.InputSource;
+import org.xml.sax.SAXException;
+
+/**
+ *
+ * @author HpAdmin
+ */
+public class SistemaExpertoCocina {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        final String xmlStr = "<tree_option eliminar=\"cancel\" option_id=\"75\" parent_id=\"74\" prop1=\"A\" prop2=\"\" prop3=\"\" prop4=\"\" prop5=\"\" prop6=\"U\" prop7=\"Y\" prop8=\"Y\" sorter=\"75\" tipo=\"cmd\">    <fuente><![CDATA[[ -f /tmp/inv.status ] && phzap rm /tmp/inv.status]]></fuente>    <destino/></tree_option>\n";
+         /*Document doc = convertStringToDocument(xmlStr);
+            
+            String str = convertDocumentToString(doc);
+            System.out.println(str);
+            */
+        
+        
+        try {
+           
+            Document doc = loadXMLFromString(xmlStr);
+            System.out.println(convertDocumentToString(doc));
+        } catch (Exception ex) {
+            Logger.getLogger(SistemaExpertoCocina.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        
+    }
+    private static String convertDocumentToString(Document doc) {
+        TransformerFactory tf = TransformerFactory.newInstance();
+        Transformer transformer;
+        try {
+            transformer = tf.newTransformer();
+            // below code to remove XML declaration
+            // transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, "yes");
+            StringWriter writer = new StringWriter();
+            transformer.transform(new DOMSource(doc), new StreamResult(writer));
+            String output = writer.getBuffer().toString();
+            return output;
+        } catch (TransformerException e) {
+            e.printStackTrace();
+        }
+        
+        return null;
+    }
+
+    private static Document convertStringToDocument(String xmlStr) {
+        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();  
+        DocumentBuilder builder;  
+        try  
+        {  
+            builder = factory.newDocumentBuilder();  
+            Document doc = builder.parse( new InputSource( new StringReader( xmlStr ) ) ); 
+            return doc;
+        } catch (Exception e) {  
+            e.printStackTrace();  
+        } 
+        return null;
+    }
+    
+    private static Document loadXMLFromString(String xml) throws Exception
+    {
+        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+        factory.setNamespaceAware(true);
+        DocumentBuilder builder = factory.newDocumentBuilder();
+        return builder.parse(new ByteArrayInputStream(xml.getBytes()));
+    }
+}
